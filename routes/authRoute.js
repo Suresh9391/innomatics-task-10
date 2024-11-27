@@ -32,7 +32,7 @@ const {
   getsingleOrder,
   updateOrder,
 } = require("../controller/userCtrl");
-const { authMiddleware, isAdmin } = require("../middlewares/authMiddleware");
+const { authMiddleware, isAdmin } = require("../middlewares/authMiddleware.js");
 const { checkout, paymentVerification } = require("../controller/paymentCtrl");
 
 const router = express.Router();
